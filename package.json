@@ -1,0 +1,22 @@
+{
+  "name": "tiny-universe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/OpeAbidemi/tiny-universe.git",
+  "author": "Ope Abidemi <opeabidemi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "browserify src/index.js -o public/js/bundle.js && serve public",
+    "dev": "nodemon -e js --ignore public --exec yarn run build"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "nodemon": "^2.0.14",
+    "serve": "^12.0.1",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "three": "^0.133.1"
+  }
+}
